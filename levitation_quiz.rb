@@ -1,12 +1,9 @@
 
-def levitation_quiz
+def levitation_quiz()
   puts "What is the spell that enacts levitation?"
-  answer = gets.chomp.titleize
-  if answere == "Wingardium Leviosa"
-    break
-  else
+  answer = gets.chomp!
+    until answer == "Wingardium Leviosa"
     puts "What is the spell that enacts levitation?"
-  end
+   end
 end
 
-levitation_quiz()
